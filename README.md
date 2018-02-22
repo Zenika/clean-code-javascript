@@ -15,31 +15,33 @@
   12. [Translation](#translation)
 
 ## Introduction
-![Humorous image of software quality estimation as a count of how many expletives
-you shout when reading code](http://www.osnews.com/images/comics/wtfm.jpg)
+![Image humoristique sur l'estimation de la qualité logicielle avec comme mesure le 
+nombre de fois où vous jurez en lisant du code](http://www.osnews.com/images/comics/wtfm.jpg)
 
-Software engineering principles, from Robert C. Martin's book
+Principes de développement logiciel, tirés du livre de Robert C. Martin
 [*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882),
-adapted for JavaScript. This is not a style guide. It's a guide to producing
-[readable, reusable, and refactorable](https://github.com/ryanmcdermott/3rs-of-software-architecture) software in JavaScript.
+adapté au javascript. Ce n'est pas un guide de style. C'est un guide pour produire des logiciels en Javascript avec du code [lisible, réutilisable et refactorisable](https://github.com/ryanmcdermott/3rs-of-software-architecture).
 
-Not every principle herein has to be strictly followed, and even fewer will be
-universally agreed upon. These are guidelines and nothing more, but they are
-ones codified over many years of collective experience by the authors of
-*Clean Code*.
+Tous les principes ne doivent pas être strictement respectés, et encore 
+moins universellement accepté. Ce sont des lignes directrices, rien de plus,
+mais elles ont été codifiées après de nombreuses années d'expériences collectives
+par l'auteur de *Clean Code*.
 
-Our craft of software engineering is just a bit over 50 years old, and we are
-still learning a lot. When software architecture is as old as architecture
-itself, maybe then we will have harder rules to follow. For now, let these
-guidelines serve as a touchstone by which to assess the quality of the
-JavaScript code that you and your team produce.
+Notre métier d'ingénieur logiciel a juste un peu plus de 50 ans, et nous continuons
+d'apprendre. Quand l'architecture logicielle sera aussi vieille que 
+l'architecture elle même, alors peut être que nous aurons des règles plus 
+difficiles à suivre. Pour l'instant, utilisez ces directives comme 
+référence avec laquelle vous pourrez évaluer la quatité du code que vous et votre 
+équipe produisez.
 
-One more thing: knowing these won't immediately make you a better software
-developer, and working with them for many years doesn't mean you won't make
-mistakes. Every piece of code starts as a first draft, like wet clay getting
-shaped into its final form. Finally, we chisel away the imperfections when
-we review it with our peers. Don't beat yourself up for first drafts that need
-improvement. Beat up the code instead!
+Une dernière chose: connaitre ces règles ne fera pas immédiatement de vous
+un meilleur développeur, et travailler avec ces dernières pendant plusieurs
+années ne veut pas dire que vous ne ferez pas d'erreurs. Chaque morceau de code
+commence par être un brouillon, comme de l'argile que l'on façonnerait jusqu'à
+sa forme finale. Finallement, c'est quand on l'examine avec nos pairs que l'on
+corrige les imperfections. Ne vous autoflagellez pas sur vos premiers jets qui 
+nécessitent des améliorations. Travaillez le code à la place!
+
 
 ## **Variables**
 ### Use meaningful and pronounceable variable names
