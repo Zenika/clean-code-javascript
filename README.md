@@ -23,7 +23,7 @@ Principes de développement logiciel, tirés du livre de Robert C. Martin
 adapté au javascript. Ce n'est pas un guide de style. C'est un guide pour produire des logiciels en Javascript avec du code [lisible, réutilisable et refactorisable](https://github.com/ryanmcdermott/3rs-of-software-architecture).
 
 Tous les principes ne doivent pas être strictement respectés, et encore 
-moins universellement accepté. Ce sont des lignes directrices, rien de plus,
+moins universellement acceptés. Ce sont des lignes directrices, rien de plus,
 mais elles ont été codifiées après de nombreuses années d'expériences collectives
 par l'auteur de *Clean Code*.
 
@@ -34,13 +34,13 @@ difficiles à suivre. Pour l'instant, utilisez ces directives comme
 référence avec laquelle vous pourrez évaluer la quatité du code que vous et votre 
 équipe produisez.
 
-Une dernière chose: connaitre ces règles ne fera pas immédiatement de vous
+Une dernière chose : connaitre ces règles ne fera pas immédiatement de vous
 un meilleur développeur, et travailler avec ces dernières pendant plusieurs
 années ne veut pas dire que vous ne ferez pas d'erreurs. Chaque morceau de code
 commence par être un brouillon, comme de l'argile que l'on façonnerait jusqu'à
-sa forme finale. Finallement, c'est quand on l'examine avec nos pairs que l'on
+sa forme finale. Finalement, c'est quand on l'examine avec nos pairs que l'on
 corrige les imperfections. Ne vous autoflagellez pas sur vos premiers jets qui 
-nécessitent des améliorations. Travaillez le code à la place!
+nécessitent des améliorations. Travaillez le code à la place !
 
 
 ## **Variables**
