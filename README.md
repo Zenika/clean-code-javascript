@@ -285,9 +285,9 @@ function isActiveClient(client) {
 ```
 **[⬆ retour en haut de la page](#table-of-contents)**
 
-### Function names should say what they do
+### Les noms des fonctions doivent explicites
 
-**Bad:**
+**Mauvais :**
 ```javascript
 function addToDate(date, month) {
   // ...
@@ -295,11 +295,11 @@ function addToDate(date, month) {
 
 const date = new Date();
 
-// It's hard to tell from the function name what is added
+// Il est difficile de dire depuis le nom de la fonction ce qui a été ajouté
 addToDate(date, 1);
 ```
 
-**Good:**
+**Bon :**
 ```javascript
 function addMonthToDate(month, date) {
   // ...
@@ -308,7 +308,7 @@ function addMonthToDate(month, date) {
 const date = new Date();
 addMonthToDate(1, date);
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ retour en haut de la page](#table-of-contents)**
 
 ### Functions should only be one level of abstraction
 When you have more than one level of abstraction your function is usually
