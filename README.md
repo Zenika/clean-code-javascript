@@ -251,14 +251,14 @@ createMenu({
 **[⬆ retour en haut de la page](#table-of-contents)**
 
 
-### Functions should do one thing
-This is by far the most important rule in software engineering. When functions
-do more than one thing, they are harder to compose, test, and reason about.
-When you can isolate a function to just one action, they can be refactored
-easily and your code will read much cleaner. If you take nothing else away from
-this guide other than this, you'll be ahead of many developers.
+### Les fonctions ne doivent faire qu'une chose
+C'est de loin la règle la plus importante en ingénierie logicielle. Quand les fonctions
+font plus d'une chose, elles sont plus difficiles à écrire, tester et à comprendre.
+Quand vous pouvez isoler une fonction à une seule action, elles peuvent être réécrites
+facilement et votre code se lira plus facilement. Si vous ne prennez aucun autre conseil
+dans ce guide que celui-ci, vous serez déjà en avance sur de nombreux développeurs.
 
-**Bad:**
+**Mauvais :**
 ```javascript
 function emailClients(clients) {
   clients.forEach((client) => {
@@ -270,7 +270,7 @@ function emailClients(clients) {
 }
 ```
 
-**Good:**
+**Bon :**
 ```javascript
 function emailActiveClients(clients) {
   clients
@@ -283,7 +283,7 @@ function isActiveClient(client) {
   return clientRecord.isActive();
 }
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ retour en haut de la page](#table-of-contents)**
 
 ### Function names should say what they do
 
