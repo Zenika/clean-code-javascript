@@ -199,43 +199,43 @@ function createMicrobrewery(name = 'Hipster Brew Co.') {
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## **Functions**
-### Function arguments (2 or fewer ideally)
-Limiting the amount of function parameters is incredibly important because it
-makes testing your function easier. Having more than three leads to a
-combinatorial explosion where you have to test tons of different cases with
-each separate argument.
+## **Fonctions**
+### Arguments des fonctions (idéallement 2 ou moins)
+Limiter le nombre de paramètres de fonction est vraiment très important parce que cela
+rend les tests de vos fonctions plus aisés. En avoir plus de trois amène à une
+explosion combinatoire où vous allez avoir a tester des tonnes de différents as avec
+chacun des différents arguments.
 
-One or two arguments is the ideal case, and three should be avoided if possible.
-Anything more than that should be consolidated. Usually, if you have
-more than two arguments then your function is trying to do too much. In cases
-where it's not, most of the time a higher-level object will suffice as an
+Un ou deux arguments est la solution idéale, et trois doit être évité tant que possible.
+Tout autre situation doit être consolidée. Généralement, si vous avez
+plus de deux arguments, votre fonction fait trop de choses. Dans les cas
+où ce n'est pas le cas, la plupart du temps un objet de plus haut niveau sera suffisant comme
 argument.
 
-Since JavaScript allows you to make objects on the fly, without a lot of class
-boilerplate, you can use an object if you are finding yourself needing a
-lot of arguments.
+Puisque Javascript permet de faire des objets à la volée, sans un ensemble de classes
+standard, vous pouvez utiliser un objet si vous vous trouvez dans une situation qui nécessite un
+grand nombre d'arguments.
 
-To make it obvious what properties the function expects, you can use the ES2015/ES6
-destructuring syntax. This has a few advantages:
+Pour rendre évident les propriétés qu'une fonction attend, vous pouvez utiliser la syntaxe
+de destructuration de ES2015/ES6. Ce qui apporte certains avantages :
 
-1. When someone looks at the function signature, it's immediately clear what
-properties are being used.
-2. Destructuring also clones the specified primitive values of the argument
-object passed into the function. This can help prevent side effects. Note:
-objects and arrays that are destructured from the argument object are NOT
-cloned.
-3. Linters can warn you about unused properties, which would be impossible
-without destructuring.
+1. Quand quelqu'un regarde la signature de la fonction, il est immédiatement clair quelles
+sont les propriétés utilisées.
+2. La déstructuration clone aussi les valeurs primitives spécifiées par l'objet
+agument passé à la fonction. Ceci permet de prévenir les effets de bord. Note :
+les objets et les tableaux qui sont déstructurés depuis les arguments de type objet NE sont PAS
+clonés.
+3. Les outils d'analyse statique peuvent vous avertir des propriétés non utilisées, ce qui serait impossible
+sans déstructuration.
 
-**Bad:**
+**Mauvais :**
 ```javascript
 function createMenu(title, body, buttonText, cancellable) {
   // ...
 }
 ```
 
-**Good:**
+**Bon :**
 ```javascript
 function createMenu({ title, body, buttonText, cancellable }) {
   // ...
@@ -248,7 +248,7 @@ createMenu({
   cancellable: true
 });
 ```
-**[⬆ back to top](#table-of-contents)**
+**[⬆ retour en haut de la page](#table-of-contents)**
 
 
 ### Functions should do one thing
